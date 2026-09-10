@@ -1,0 +1,51 @@
+name: Generate Contribution Animations
+
+# 生成两种贡献动画：
+#   - 贪吃蛇（Platane/snk）
+#   - 吃豆人（abozanona/pacman-contribution-graph）
+#
+# 注意：两个 Action 都把 SVG 写进 dist/，最后由同一步骤统一推送到 output 分支。
+# 之所以必须合并成一个工作流，是因为 crazy-max/ghaction-github-pages 会"整体替换"
+# 目标分支内容 —— 若两个工作流各自推送，后跑的那个会把先跑的文件全部冲掉。
+# 顺序上先跑 Pac-Man 再跑 snk，保证两个 Action 的产物都在。
+on:
+  schedule:
+    # 每 12 小时自动刷新一次
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Generate Pac-Man contribution graph
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          games: "pacman"
+          hide_month_labels: "false"
+
+      - name: Generate snake SVG
+        uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Show generated files
+        run: ls -la dist
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
