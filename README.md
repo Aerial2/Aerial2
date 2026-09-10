@@ -23,27 +23,6 @@
 
 ---
 
-## 🐼 关于我 · About Me
-
-```yaml
-name:      Aerial2
-role:      全栈开发者 / 桌面工具 & AI 基础设施折腾爱好者
-hobby:     把散落的工具塞进一个窗口，把重复的活儿交给代码
-focus:
-  - 桌面客户端   Tauri 2 · Rust · React 19 · TypeScript
-  - 运维工作台   SSH / SFTP / 监控 / 内置终端
-  - AI 基建      OpenAI 兼容网关 · 账号池 · 多账号管理
-  - 网络与代理   代理池网关 · 协议兼容层
-principle: "少即是多 · 先跑起来，再打磨"
-```
-
-- 🔭 目前在打磨 **[PandaTerm](https://github.com/Aerial2/PandaTerm)** —— 一个把 SSH 终端 / SFTP / 编辑器 / AI Agent / MCP 整合到一起的 Windows 运维工作台
-- 🌱 持续折腾 **Rust · Go · Tauri** 生态的开发者工具
-- 💡 喜欢做「把 n 个工具合成 1 个」这件事
-- ⚡ 信条：**Keep it simple, ship it clean.**
-
----
-
 ## 🛠️ 技术栈 · Tech Stack
 
 <div align="center">
@@ -79,38 +58,6 @@ principle: "少即是多 · 先跑起来，再打磨"
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 </div>
-
----
-
-## 🚀 代表作 · Featured Project
-
-<div align="center">
-
-<a href="https://github.com/Aerial2/PandaTerm">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Aerial2&repo=PandaTerm&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00CEC9&icon_color=6C5CE7&text_color=c9d1d9" />
-</a>
-
-</div>
-
-> ### 🐼 PandaTerm — SSH 终端与运维工作台
->
-> 把 **终端、SFTP、代码编辑、系统监控、AI Agent、MCP 工具** 收敛进同一个 Windows 桌面应用，
-> 从此不用在终端 / 文件管理器 / 编辑器 / AI 网页之间来回横跳。
->
-> | 能力 | 亮点 |
-> | :-- | :-- |
-> | 🖥️ **SSH 会话** | 密码 / 私钥 / Keyboard-Interactive / GSSAPI，主机指纹校验，可导入 Xshell 会话 |
-> | 🪟 **多标签 + 分屏** | 每个分屏独立标签集合，拖拽排序，拖入即分屏 |
-> | 📁 **文件管理** | 批量上传下载、整目录上传、压缩解压、媒体预览 |
-> | 📝 **内置编辑器** | 本地打包 Monaco，多标签、`Ctrl+S`、大文件进度、冲突自动排队补存 |
-> | 📊 **监控 & 进程** | 复用 SSH 会话采集 CPU / 内存 / 磁盘 / 网络，**服务端零 Agent** |
-> | 🤖 **PandaTerm AI** | OpenAI 兼容接口，Ask / Agent 双模式，改文件先出 Diff，执行命令需授权 |
-> | 🔌 **MCP 生态** | stdio / SSE / Streamable HTTP，内置市场，可导入导出 `mcp.json` |
-> | 🔐 **凭据安全** | Windows DPAPI，或 Argon2id + AES-256-GCM 主密码保险库 |
->
-> **技术栈** · `Tauri 2` `Rust` `Tokio` `React 19` `TypeScript` `Vite 6`
->
-> <a href="https://github.com/Aerial2/PandaTerm"><img src="https://img.shields.io/badge/查看源码-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 ---
 
@@ -154,22 +101,6 @@ principle: "少即是多 · 先跑起来，再打磨"
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Aerial2/Aerial2/output/github-contribution-grid-snake.svg" />
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Aerial2/Aerial2/output/github-contribution-grid-snake.svg" />
 </picture>
-
-</div>
-
----
-
-## 🧭 关注的领域 · What I Explore
-
-<div align="center">
-
-| 🧩 方向 | 📦 代表项目 |
-| :-- | :-- |
-| **桌面 & 运维工作台** | [PandaTerm](https://github.com/Aerial2/PandaTerm) · [WMPFDebugger](https://github.com/Aerial2/WMPFDebugger) |
-| **AI 网关 & 账号池** | [sub2api](https://github.com/Aerial2/sub2api) · [CPA-Manager-Plus](https://github.com/Aerial2/CPA-Manager-Plus) · [cockpit-tools](https://github.com/Aerial2/cockpit-tools) |
-| **协议兼容 / 中转** | [chatgpt2api](https://github.com/Aerial2/chatgpt2api) · [cursor-byok](https://github.com/Aerial2/cursor-byok) |
-| **网络 & 代理池** | [Resin](https://github.com/Aerial2/Resin) |
-| **前端后台 & 工具页** | [vue-pure-admin](https://github.com/Aerial2/vue-pure-admin) · [PriceAI](https://github.com/Aerial2/PriceAI) |
 
 </div>
 
