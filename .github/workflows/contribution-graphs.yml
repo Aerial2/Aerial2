@@ -17,6 +17,11 @@ on:
     branches:
       - main
 
+# 多个运行并发写 output 分支会导致推送冲突，这里串行化并取消旧任务
+concurrency:
+  group: contribution-graphs
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
