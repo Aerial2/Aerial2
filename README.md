@@ -82,12 +82,6 @@
   <img width="95%" src="assets/card-activity.svg" alt="Activity Graph" />
 </a>
 
-<br/>
-
-<a href="https://github.com/Aerial2">
-  <img src="assets/card-trophy.svg" alt="Trophy" />
-</a>
-
 </div>
 
 ---
