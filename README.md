@@ -23,7 +23,7 @@
 
 ---
 
-## 🛠️ 技术栈 · Tech Stack
+## 技术栈 · Tech Stack
 
 <div align="center">
 
@@ -61,7 +61,7 @@
 
 ---
 
-## 📈 数据面板 · GitHub Stats
+## 数据面板 · GitHub Stats
 
 <div align="center">
 
@@ -92,7 +92,7 @@
 
 ---
 
-## 🐍 贡献贪吃蛇 · Contribution Snake
+## 贡献贪吃蛇 · Contribution Snake
 
 <div align="center">
 
@@ -108,7 +108,7 @@
 
 <div align="center">
 
-### 💬 保持折腾，保持热爱
+### 保持折腾，保持热爱
 
 > *"Tools should get out of your way — and AI should earn your trust."*
 
